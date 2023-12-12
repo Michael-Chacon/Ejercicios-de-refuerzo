@@ -14,12 +14,12 @@ Algoritmo alzaDolar
 	
 	count <- 0
 	para i<- 1 Hasta dias/2  Con Paso 1 Hacer
-		count <- count +1
-		si i = 1 Entonces
-			diferencia[i] <- abs(valorDolar[i] - valorDolar[i + i])
-		SiNo
-			diferencia[i] <- abs(valorDolar[i+i-1] - valorDolar[i + i])
-		FinSi
+		count <- count + 1
+			si i = 1 Entonces
+				diferencia[i] <- abs(valorDolar[i] - valorDolar[i + i])
+			SiNo
+				diferencia[i] <- abs(valorDolar[i+i-1] - valorDolar[i + i])
+			FinSi
 	FinPara
 	Escribir 'contador', count;
 	
